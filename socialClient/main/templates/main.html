@@ -1,0 +1,38 @@
+{% extends 'main_layout.html' %}
+{% block layoutblock %} 
+  
+    
+  
+
+     
+<section id="main">
+    <div id="main_info">
+        <i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;김인하<br/>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;인하대 CU<br/>
+    </div>
+    <div id="webcam">   
+        <video autoplay="true" id="videoElement">
+        
+        </video>
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+    </div>
+</section>
+<script>
+    var video = document.querySelector("#videoElement");
+     
+     if (navigator.mediaDevices.getUserMedia) {
+       navigator.mediaDevices.getUserMedia({ video: true })
+         .then(function (stream) {
+           video.srcObject = stream;
+         })
+         .catch(function (err0r) {
+           console.log("Something went wrong!");
+         });
+     }
+     
+      
+    </script>
+{% endblock %} 

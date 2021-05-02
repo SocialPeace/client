@@ -1,0 +1,52 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height:7%;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    background-color:rgb(252, 249, 249);
+}
+footer a{
+    text-decoration: none;
+    color:#888;
+    flex: 1 1 40%;
+    text-align: center;
+    padding:5px;
+} 
+
+section{
+    padding:30px; 
+    margin:auto;
+    
+}
+
+#main{
+    padding-top: 50%;
+}
+#main div{ 
+    width: 80%; 
+    margin: auto;
+}
+ 
+#main_info{
+    color: #888;  
+}
+#main_info i{
+    width:10px;
+    display: inline-block; 
+}
+#webcam{
+    width: 80%;
+    padding:50px 30px;
+    margin: auto;
+    border: 1px solid #888;
+    text-align: center;
+    color: #fff; 
+}
+
+
